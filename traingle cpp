@@ -84,3 +84,37 @@ int main()
   return 0;
 
 }
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+ 
+
+int main()
+{
+    int a, b, s, i;
+    cout << "input 2 positive values: ";
+    cin >> a >> b;
+
+ 
+
+    s = 0;
+    i = 0;
+    while (i < b)
+    {
+        s = s + a;        // add a to the sum s
+        i = i + 1;        // increase i
+    }
+    cout << a << " * " << b << " = " << s << endl;
+
+ 
+
+    cin.ignore();
+    cin.get();
+    return 0;
+}
