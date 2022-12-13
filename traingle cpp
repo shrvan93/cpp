@@ -186,3 +186,36 @@ int main()
 }
 
 
+
+
+
+
+
+
+
+
+[18:06] JUSTINA LAVINIA  STANICA (PROFESOR)
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    unsigned a, b, q=0, r;
+ 
+    cout << "input the 2 numbers "; 
+    cin >> a >> b;
+ 
+    while (a >= b)
+    {
+        a = a - b;
+        q++;    // q=q+1;
+    }
+    r = a;
+    cout << "the quotient " << q << endl << "the remainder " << r << endl;
+    cin.ignore();
+    cin.get();
+    return 0;
+}
+
+
+
