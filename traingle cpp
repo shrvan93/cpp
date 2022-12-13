@@ -150,3 +150,39 @@ int main()
 }
 
 
+
+
+
+
+
+[17:44] JUSTINA LAVINIA  STANICA (PROFESOR)
+// given a positive number, check if it is a palindromic number
+ 
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    unsigned int a, r, copy, rev=0;
+ 
+    cout << "input the number "; cin >> a;
+    copy = a;
+    while (a != 0)
+    {
+        r = a % 10;
+        rev = rev* 10 + r ;
+        a = a / 10;
+    }
+    cout << "the initial number  is " << copy << endl;
+    cout << "the reversed number is " << rev << endl;
+    if (copy == rev) 
+        cout << "it's palindromic" << endl;
+    else
+        cout << "it's not palindromic" << endl;
+    cin.ignore();
+    cin.get();
+    return 0;
+ 
+}
+
+
