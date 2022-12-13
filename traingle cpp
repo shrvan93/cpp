@@ -118,3 +118,35 @@ int main()
     cin.get();
     return 0;
 }
+
+
+
+
+
+
+
+[17:11] JUSTINA LAVINIA  STANICA (PROFESOR)
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    unsigned int a, r, c = 0;
+ 
+    cout << "input the number "; cin >> a;
+    while (a != 0)
+    {
+        r = a % 10;
+        cout << r << endl;
+        c = c + 1;
+        a = a / 10;
+    }
+    cout << "the number has " << c << " digits" << endl;
+ 
+    cin.ignore();
+    cin.get();
+    return 0;
+ 
+}
+
+
