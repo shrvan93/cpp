@@ -257,3 +257,34 @@ int main()
 }
 
 
+
+
+
+
+[08/12 12:05] JUSTINA LAVINIA  STANICA (PROFESOR)
+#include <iostream>
+using namespace std;
+int main()
+{
+  int grade;
+  cout<<"input the grade "; 
+  cin >> grade;
+  if (grade >= 1 && grade <= 4)
+    cout << "you failed!" << endl;
+  else
+  if (grade == 5)
+    cout << "you were lucky. you barely passed!" << endl;
+  else
+  if (grade >= 6 && grade <= 9)
+    cout << "you passed!" << endl;
+  else
+  if (grade == 10)
+    cout << "congratulations! you did great!" << endl;
+  else
+    cout << "this is not a valid grade" << endl;
+ 
+  cin.ignore();
+  cin.get();
+  return 0;
+}
+
