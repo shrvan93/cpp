@@ -330,3 +330,41 @@ int main()
 }
 
 
+
+
+
+
+
+
+[11:15] JUSTINA LAVINIA  STANICA (PROFESOR)
+
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    int n, pos = 0, neg = 0, null = 0;
+    char answer;
+ 
+    do
+    {
+        cout << "input a number ";
+        cin >> n;
+        if (n > 0) pos++;
+        else
+            if (n < 0) neg++;
+            else null++;
+        cout << "Continue? (Y/N) ";
+        cin >> answer;
+    } while (answer == 'Y' || answer == 'y');
+ 
+    cout << "positive: " << pos << endl <<
+        "negative: " << neg << endl <<
+        "null: " << null << endl;
+ 
+    cin.ignore();
+    cin.get();
+    return 0;
+}
+
+
