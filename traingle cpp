@@ -219,3 +219,41 @@ int main()
 
 
 
+
+
+
+
+[08/12 11:14] JUSTINA LAVINIA  STANICA (PROFESOR)
+// given 3 positive numbers
+// check if they can form a triangle
+// if so, calculate the perimeter and the area of the triangle
+// the sum of any 2 edges must be bigger than the third edge
+ 
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    double a, b, c, perimeter, semiperimeter, area;
+    cout << "input the 3 positive numbers: ";
+    cin >> a >> b >> c;
+    if (a <= 0 || b <= 0 || c <= 0)
+        cout << "the numbers should be positive" << endl;
+    else
+        if (a + b > c && a + c > b && b + c > a)
+        {
+            cout << "the numbers can be the edges of a triangle" << endl;
+            perimeter = a + b + c;
+            semiperimeter = perimeter / 2;
+            area = sqrt(semiperimeter * (semiperimeter - a) * (semiperimeter - b) * (semiperimeter - c));
+            cout << "the perimeter of the triangle is " << perimeter << ", the area is " << area << endl;
+        }
+        else
+            cout << "the numbers cannot be the edges of a triangle" << endl;
+ 
+    cin.ignore();
+    cin.get();
+    return 0;
+}
+
+
