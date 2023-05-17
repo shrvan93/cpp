@@ -4,8 +4,6 @@ Hello
 
 shrvan
 
-asdasda
-
 gggggggg
 
 Hello, It's me
